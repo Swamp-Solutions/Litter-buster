@@ -48,6 +48,7 @@ We are using Jira to track our project progress. Link to projectboard: [Jira](ht
 - **Apache Airflow**
 - **Agile**
   - Jira
+    - [Link to Jira](https://mcvk.atlassian.net/jira/software/projects/LB/boards/2)
     - Continuous progress documentation
   - Stand-ups: _@09.00_
   - Check-out: _@16.45_
