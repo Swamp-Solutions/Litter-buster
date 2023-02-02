@@ -3,7 +3,6 @@
 ## Project Description
 
 Litterbuster is an application to identify and catalog instances of littering as well as reporting it.
-We are using Jira to track our project progress. Link to projectboard: [Jira](https://mcvk.atlassian.net/jira/software/projects/LB/boards/2)
 
 - [Litter-buster](#litter-buster)
   - [Project Description](#project-description)
@@ -17,6 +16,8 @@ We are using Jira to track our project progress. Link to projectboard: [Jira](ht
   - [Notes](#notes)
   - [Known issues](#known-issues)
   - [Reflections](#reflections)
+    - [Andreas Comments](#andreas-comments)
+      - [Andreas Länkar](#andreas-länkar)
 
 ## Project plan
 
@@ -30,7 +31,7 @@ We are using Jira to track our project progress. Link to projectboard: [Jira](ht
 6. Create a database structure to catalog the classified images.
 7. Build an application to send images of littering to an email-adress.
 8. Create a dashboard showing data and predictions.
-9. Create a DAG for regular re-learning of the model based on images stored in database.
+9. Create a DAG for regular re-learning of the model based on images stored in database. [Maybe better alternative](https://medium.com/value-stream-design/online-machine-learning-515556ff72c5)
 
 ### **Methods**
 
@@ -68,13 +69,16 @@ We are using Jira to track our project progress. Link to projectboard: [Jira](ht
 1. Image classification with Scikit-Learn
    - [Kapernikov Tutorial](https://kapernikov.com/tutorial-image-classification-with-scikit-learn/)
    - [Scikit documentation Tutorial](https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html)
-2. OpenCV
+
+-
+
+1. OpenCV
 
    - [OpenCV Tutorials](https://docs.opencv.org/4.x/d9/df8/tutorial_root.html)
    - [Face recognition with OpenCV](https://datagen.tech/guides/face-recognition/face-recognition-with-python/)
    - [OpenCV Tips](https://learnopencv.com/getting-started-with-opencv/)
 
-3. Joblib
+2. Joblib
    - [Joblib Documentation](https://joblib.readthedocs.io/en/latest/)
 
 ### **Predictions**
@@ -113,3 +117,22 @@ We are using Jira to track our project progress. Link to projectboard: [Jira](ht
 - GDPR has to be taken into consideration if using facial recognition functions.
 
 ## Reflections
+
+### Andreas Comments
+
+Link in 9. in Objectives
+Decide on Dataset for litter
+Find method for loading model in scikit learn
+Maybe use Pickle instead for model loading
+
+How to combine face recognition with littering with face identification - Maybe replace face identification with person identification
+
+#### Andreas Länkar
+
+[What is Online Machine Learning?](https://medium.com/value-stream-design/online-machine-learning-515556ff72c5)
+
+[Litter Detection with Deep Learning: A Comparative Study](https://www.mdpi.com/1424-8220/22/2/548)
+
+[PlastOPol: A Dataset for Litter Detection](https://zenodo.org/record5829156#.Y9vM6XbMJmM/)
+
+[Add new data to a pretrained model](https://towardsdatascience.com/how-to-add-new-data-to-a-pretrained-model-in-scikit-learn-ce16911afe33)
