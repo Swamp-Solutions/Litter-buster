@@ -3,6 +3,7 @@
 ## Project Description
 
 Litterbuster is an application to identify and catalog instances of littering as well as reporting it.
+We are using Jira to track our project progress. Link to projectboard: [Jira](https://mcvk.atlassian.net/jira/software/projects/LB/boards/2)
 
 - [Litter-buster](#litter-buster)
   - [Project Description](#project-description)
@@ -10,6 +11,9 @@ Litterbuster is an application to identify and catalog instances of littering as
     - [Objectives](#objectives)
     - [Methods](#methods)
     - [Predictions](#predictions)
+    - [Predicted issues](#predicted-issues)
+  - [Known issues](#known-issues)
+    - [Alternative solutions](#alternative-solutions)
 
 ## Project plan
 
@@ -32,9 +36,25 @@ Litterbuster is an application to identify and catalog instances of littering as
 - Pandas, numpy
 - SKlearn
 - PostgreSQL
+- joblib / pickle
 
 ### Predictions
 
 - Predict person will litter
 - Predict littering peak-littering-times
 - Predict clean-up need
+
+### Predicted issues
+
+- Object recognition distance
+- The distance to the object may affect recognition.
+- Lighting conditions may affect the recognition.
+
+## Known issues
+
+- GDPR has to be taken into consideration if using facial recognition functions.
+
+### Alternative solutions
+
+- Face recognition and classification
+-
