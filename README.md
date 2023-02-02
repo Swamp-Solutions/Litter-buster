@@ -23,8 +23,8 @@ Litterbuster is an application to identify and catalog instances of littering as
 
 ### **Objectives**
 
-1. Train machine learning models to identify faces.
-2. Train machine learning model to recognize faces in images.
+1. Train machine learning models to identify person.
+2. Train machine learning model to recognize person in images.
 3. We will also build a machine learning model to recognize littering.
 4. Create a backend-application to run the machine-learning functions.
 5. Lastly there will be an application to view instances of littering from a database.
@@ -44,7 +44,7 @@ Litterbuster is an application to identify and catalog instances of littering as
   - Pandas
   - SKlearn
   - PostgreSQL
-  - joblib / pickle
+  - Pickle
 
 - **Apache Airflow**
 - **Agile**
@@ -123,9 +123,6 @@ Litterbuster is an application to identify and catalog instances of littering as
 Link in 9. in Objectives
 Decide on Dataset for litter
 Find method for loading model in scikit learn
-Maybe use Pickle instead for model loading
-
-How to combine face recognition with littering with face identification - Maybe replace face identification with person identification
 
 #### Andreas Länkar
 
@@ -133,6 +130,6 @@ How to combine face recognition with littering with face identification - Maybe 
 
 [Litter Detection with Deep Learning: A Comparative Study](https://www.mdpi.com/1424-8220/22/2/548)
 
-[PlastOPol: A Dataset for Litter Detection](https://zenodo.org/record5829156#.Y9vM6XbMJmM/)
+[PlastOPol: A Dataset for Litter Detection](https://zenodo.org/record/5829156#.Y9vM6XbMJmM)
 
 [Add new data to a pretrained model](https://towardsdatascience.com/how-to-add-new-data-to-a-pretrained-model-in-scikit-learn-ce16911afe33)
