@@ -45,7 +45,8 @@ The TACO dataset [37] presents 1500 images involving 4784 annotations, where mos
  - [Efficientdet_d0](https://docs.openvino.ai/2021.2/omz_models_public_efficientdet_d0_tf_efficientdet_d0_tf.html) 
  - [Yolo_v5](https://towardsdatascience.com/how-to-train-a-custom-object-detection-model-with-yolo-v5-917e9ce13208)
 
-
+##### Information / Research Papers
+[R-CNN](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)
 ### Questions for Furth
 På vilket sätt rekommenderas presentationen läggas upp? Vi kommer naturligtvis hålla ett demo och har diskuterat småskaligt hur vi skall göra detta. \
 Men mer specifikt fördelningen Demo/Sales pitch mot kodpresentation? \
