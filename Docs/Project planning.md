@@ -130,7 +130,7 @@ Fördelar och nackdelar med metoderna? Kanske lite utanför scope vad jag förv�
 På något vis borde vi tänka på hur vi skall presentera förutsägningarna. Hur gör vi en välpresterande modell som samtidigt kan ha en bred informationsnivå? \
 Jag gillar email-tanken då den inte kräver direkt respons så tycker definitivt att detta är startpunkten.
 
-##### Front-end
+### Front-end
 **Plugin till smartphone** \ 
 Hade varit extremt snyggt för att demonstrera produkten. Kanske mindre användbart praktiskt?
 
