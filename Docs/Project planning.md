@@ -39,6 +39,7 @@ The TACO dataset [37] presents 1500 images involving 4784 annotations, where mos
 ##### Datasets
  - [Drinking waste classification](https://paperswithcode.com/dataset/drinking-waste-classification) 
  - [UAVVASTE](https://paperswithcode.com/dataset/uavvaste)
+ - [Garbage dataset kaggle](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification?resource=download)
 
 ##### Models
  - [Efficientdet_d0](https://docs.openvino.ai/2021.2/omz_models_public_efficientdet_d0_tf_efficientdet_d0_tf.html) 
@@ -123,7 +124,8 @@ Dessa antaganden gjorde jag i samband med reflektionerna i [Litter_detection_wit
 Konvertera till HSV? \
 Fördelar och nackdelar med metoderna? Kanske lite utanför scope vad jag förväntar mig att ni undersökt just nu, men viktiga tankar och då det kan ta väldigt lång tid att lära in modellerna kan det vara bra att testa lite.
 
-5. Det finns många förtränade haar-cascades för ansiktsigenkänning och personidentifiering som kan användas.
+5. Det finns många förtränade haar-cascades för ansiktsigenkänning och personidentifiering som kan användas vid tidsbrist.
+6. Det kan tydligen vara svårt att få hög accuracy med hemmagjorda haar-cascades.
 
 #### Application performance
 På något vis borde vi tänka på hur vi skall presentera förutsägningarna. Hur gör vi en välpresterande modell som samtidigt kan ha en bred informationsnivå? \
