@@ -47,6 +47,7 @@ The TACO dataset [37] presents 1500 images involving 4784 annotations, where mos
 
 ##### Information / Research Papers
 [R-CNN](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)
+[Overfeat paper](https://arxiv.org/abs/1312.6229)
 ### Questions for Furth
 På vilket sätt rekommenderas presentationen läggas upp? Vi kommer naturligtvis hålla ett demo och har diskuterat småskaligt hur vi skall göra detta. \
 Men mer specifikt fördelningen Demo/Sales pitch mot kodpresentation? \
