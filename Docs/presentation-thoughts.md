@@ -31,8 +31,9 @@ Audience:
 ## Steps to a good demo
 
 ### 1. Know your audience
-- Large business
-- Small 
+- Large business owners
+- Carpenter Business
+- Goverment faculties
 
 ### 2. Start with the problem
 **Write User stories prior to the demo with your message**
