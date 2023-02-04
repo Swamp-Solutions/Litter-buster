@@ -4,7 +4,7 @@
 
 ### How do we want to do this?
 After research into openCV there seems to be several ways to face this problem. \
-Most likely we will want to use haar-cascades which are a very easy way to identify objects in images. \
+Most likely we will want to use haar-cascades which are a very easy way to identify objects in images. 
 
 There are already haar-cascades available for person identification. Is the goal to train our own? \
 This seems like the most interesting approach to me.
@@ -22,14 +22,14 @@ It will do this by Identifying litter, identifying whether a person is present b
 ### Who are our customers?
 We may have as customers any land or facility proprietor. \
 Public areas governed by municipalities (beaches, city centers) \
-Authorities in an attempt to reduce littering in cities. \
+Authorities in an attempt to reduce littering in cities. 
 
 Another thing to consider is that the software can be used with some negatives too. \
-A restauranteaur may use this software to identify cleaning needs, to observe tables with litter that there are no people by. (May be very applicable to fast-food restaurants) \
+A restauranteaur may use this software to identify cleaning needs, to observe tables with litter that there are no people by. (May be very applicable to fast-food restaurants) 
 
 ### Useful quotes
 
-In the same vein, MJU [33](https://paperswithcode.com/dataset/mju-waste) is another dataset for segmentation; however, unlike TACO, this dataset contains only indoor images with people holding the litter instances in their hands. \
+In the same vein, MJU [33](https://paperswithcode.com/dataset/mju-waste) is another dataset for segmentation; however, unlike TACO, this dataset contains only indoor images with people holding the litter instances in their hands. 
 
 The TACO dataset [37] presents 1500 images involving 4784 annotations, where most of the annotations are considered as large, with images ranging from 842×474
  to 6000×4000
@@ -37,19 +37,19 @@ The TACO dataset [37] presents 1500 images involving 4784 annotations, where mos
 
 #### Links
 ##### Datasets
-[Drinking waste classification](https://paperswithcode.com/dataset/drinking-waste-classification)
-[UAVVASTE](https://paperswithcode.com/dataset/uavvaste)
+ - [Drinking waste classification](https://paperswithcode.com/dataset/drinking-waste-classification) 
+ - [UAVVASTE](https://paperswithcode.com/dataset/uavvaste)
 
 ##### Models
-[Efficientdet_d0](https://docs.openvino.ai/2021.2/omz_models_public_efficientdet_d0_tf_efficientdet_d0_tf.html)
-[Yolo_v5](https://towardsdatascience.com/how-to-train-a-custom-object-detection-model-with-yolo-v5-917e9ce13208)
+ - [Efficientdet_d0](https://docs.openvino.ai/2021.2/omz_models_public_efficientdet_d0_tf_efficientdet_d0_tf.html) 
+ - [Yolo_v5](https://towardsdatascience.com/how-to-train-a-custom-object-detection-model-with-yolo-v5-917e9ce13208)
 
 
 ### Questions for Furth
 På vilket sätt rekommenderas presentationen läggas upp? Vi kommer naturligtvis hålla ett demo och har diskuterat småskaligt hur vi skall göra detta. \
 Men mer specifikt fördelningen Demo/Sales pitch mot kodpresentation? \
 Då vår egentliga publik är medstuderande samt programansvariga kanske det är intressant att ha en viss fokus på "How" \
-Lista över potentiell publik: \
+Lista över potentiell publik: 
 - Köpare
 - Tech-ansvariga
 - Användare
@@ -66,15 +66,13 @@ I en naturlig demo kanske intressenterna är Köpare Tech-ansvariga användare o
 Tankar på vad man hade kunnat inkludera här.
 
 ##### Flera Modeller
-Skulle du kunna repetera dina tankar om att lära in flera modeller? \
+Skulle du kunna repetera dina tankar om att lära in flera modeller? 
 
 ##### Mini-inlärning
 Hur testar man olika metoder på ett projekt med så mycket data som detta? \
-Vi kommer behöva experimentera lite med olika bildmanipulationer om vi inte bara följer någon "Best-practice"-guide. \ 
+Vi kommer behöva experimentera lite med olika bildmanipulationer om vi inte bara följer någon "Best-practice"-guide. 
 
-Blir det en tillförlitlig modell om man minskar sample-size i testning?
-
-##### 
+Hur avgör man tillförlitlighet i en modell om man minskar sample-size i testning?
 
 
 
@@ -88,6 +86,7 @@ Kanske starta med ett extremt kortfattat intro av vad vi kommer presentera?
 #### Presentation av gruppen
  - Namn
  - Bakgrund
+ - Interaktiv Roadmap?
 
 ### Demo
  - Vad kommer produkten förändra
@@ -95,10 +94,10 @@ Kanske starta med ett extremt kortfattat intro av vad vi kommer presentera?
  - Demo
    - Ha en film redo med visualiseringar
    - Kanske Livedemo  (Hade varit snyggt att kunna ta en bild på klassen där man illustrerar vilka människor som stökar ner)
-   - Visa vårt Front-end UI (Är detta verkligen en faktisk komponent av produkten eller har vi front-end enbart för demo?)
+   - Visa vårt Front-end UI (Är detta verkligen en faktisk komponent av vår MVP eller har vi front-end enbart för demo?)
 ### Tekniska förklaringar
  - Ge en enkel översikt för hur produkten fungerar tekniskt på en hög nivå.
- - Interaktiv Roadmap här?
+ - Hur tränar man en Haar-Cascade?
  - Exempelkod - Kanske presentera med en snygg städad notebook. Markdown cheat-sheet över funktionerna som används?
 
 ### Reflektioner
@@ -118,7 +117,7 @@ Detta kan innebära att vi väljer en plats, typ "Kontor" som grund för vårt n
 Problemet med en generell "Trash detection" är att vi kommer ha väldigt svårt att bestämma negativ data för klassifikation som inte förvirrar modellen. Det vill säga data som inte innehåller föremålen vi klassifierar. \ 
 Dessa antaganden gjorde jag i samband med reflektionerna i [Litter_detection_with_deep_learning](https://www.mdpi.com/1424-8220/22/2/548#sec4dot3-sensors-22-00548)
 
-3. Det finns ett problem med små föremål typ cigarettfimpar och liknande i att det kan ta väldigt lång tid att träna en modell på hög upplösning, samt att hitta en bra nivå av "blur". \ 
+3. Det finns ett problem med små föremål typ cigarettfimpar och liknande i att det kan ta väldigt lång tid att träna en modell på hög upplösning, samt att hitta en bra nivå av "blur". 
 
 4. Är det kanske mer lämpligt att använda en enkel edge-cascade för trash-detection? \
 Konvertera till HSV? \
@@ -131,9 +130,11 @@ På något vis borde vi tänka på hur vi skall presentera förutsägningarna. H
 Jag gillar email-tanken då den inte kräver direkt respons så tycker definitivt att detta är startpunkten.
 
 ### Front-end
-**Plugin till smartphone** \ 
+**Plugin till smartphone** 
+
 Hade varit extremt snyggt för att demonstrera produkten. Kanske mindre användbart praktiskt?
 
 **Flask / Dash** \
 Enkelt. Går att göra snygga front-ends och visualisera bilder på ett tydligt sätt. \
-Kanske att ha detta som bas för administration av produkten?
+Kanske att ha detta som bas för administration av produkten? \
+Hade varit coolt att kunna presentera en video-stream där man slänger lite skräp live.
