@@ -39,12 +39,18 @@ The TACO dataset [37] presents 1500 images involving 4784 annotations, where mos
 ##### Datasets
  - [Drinking waste classification](https://paperswithcode.com/dataset/drinking-waste-classification) 
  - [UAVVASTE](https://paperswithcode.com/dataset/uavvaste)
+ - [Garbage dataset kaggle](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification?resource=download)
 
 ##### Models
  - [Efficientdet_d0](https://docs.openvino.ai/2021.2/omz_models_public_efficientdet_d0_tf_efficientdet_d0_tf.html) 
  - [Yolo_v5](https://towardsdatascience.com/how-to-train-a-custom-object-detection-model-with-yolo-v5-917e9ce13208)
 
+##### Information / Research Papers
+[R-CNN](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)
+[Overfeat paper](https://arxiv.org/abs/1312.6229)
 
+[YOLOv1](https://arxiv.org/pdf/1506.02640.pdf)
+[YOLOv5](https://www.mdpi.com/2076-3417/12/14/7255/pdf)
 ### Questions for Furth
 På vilket sätt rekommenderas presentationen läggas upp? Vi kommer naturligtvis hålla ett demo och har diskuterat småskaligt hur vi skall göra detta. \
 Men mer specifikt fördelningen Demo/Sales pitch mot kodpresentation? \
@@ -123,7 +129,9 @@ Dessa antaganden gjorde jag i samband med reflektionerna i [Litter_detection_wit
 Konvertera till HSV? \
 Fördelar och nackdelar med metoderna? Kanske lite utanför scope vad jag förväntar mig att ni undersökt just nu, men viktiga tankar och då det kan ta väldigt lång tid att lära in modellerna kan det vara bra att testa lite.
 
-5. Det finns många förtränade haar-cascades för ansiktsigenkänning och personidentifiering som kan användas.
+5. Det finns många förtränade haar-cascades för ansiktsigenkänning och personidentifiering som kan användas vid tidsbrist.
+6. Det kan tydligen vara svårt att få hög accuracy med hemmagjorda haar-cascades.
+7. Vi kan behöva bestämma ett datum då våra modeller är "inte röra" så att vi kan göra färdigt övriga delar av projektet.
 
 #### Application performance
 På något vis borde vi tänka på hur vi skall presentera förutsägningarna. Hur gör vi en välpresterande modell som samtidigt kan ha en bred informationsnivå? \
