@@ -131,6 +131,7 @@ Fördelar och nackdelar med metoderna? Kanske lite utanför scope vad jag förv�
 
 5. Det finns många förtränade haar-cascades för ansiktsigenkänning och personidentifiering som kan användas vid tidsbrist.
 6. Det kan tydligen vara svårt att få hög accuracy med hemmagjorda haar-cascades.
+7. Vi kan behöva bestämma ett datum då våra modeller är "inte röra" så att vi kan göra färdigt övriga delar av projektet.
 
 #### Application performance
 På något vis borde vi tänka på hur vi skall presentera förutsägningarna. Hur gör vi en välpresterande modell som samtidigt kan ha en bred informationsnivå? \
