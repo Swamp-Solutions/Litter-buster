@@ -18,5 +18,5 @@ Kan vara lönt att titta på andra githubs i objektklassifikation och än mer sp
 
 
 #### Egna Reflektioner i diskussionen:
-Vi bör titta extra på labeling-mjukvara. Vilken använder vi och spelar det någon roll? Är filformatet samma?
+Vi bör titta extra på labeling-mjukvara. Vilken använder vi och spelar det någon roll? Är filformatet samma? \
 Vi bör även titta extra på hur vi ska "haffa" nedskräpare? Det finns olika sätt"
