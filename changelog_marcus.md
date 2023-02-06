@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMuixUGyDgll89uho7EiPcq",
+      "authorship_tag": "ABX9TyNnMDOsXdpJ9dDE0E8AJKu4",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -27,13 +27,13 @@
       ]
     },
     {
-      "cell_type": "code",
-      "execution_count": null,
+      "cell_type": "markdown",
+      "source": [
+        "# Changelog - Marcus development"
+      ],
       "metadata": {
-        "id": "LbOnV9REFHQQ"
-      },
-      "outputs": [],
-      "source": []
+        "id": "KLjhCv-AFcJz"
+      }
     }
   ]
 }
