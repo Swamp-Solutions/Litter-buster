@@ -20,3 +20,9 @@ Kan vara lönt att titta på andra githubs i objektklassifikation och än mer sp
 #### Egna Reflektioner i diskussionen:
 Vi bör titta extra på labeling-mjukvara. Vilken använder vi och spelar det någon roll? Är filformatet samma? \
 Vi bör även titta extra på hur vi ska "haffa" nedskräpare? Det finns olika sätt"
+
+
+
+### Andreas L Frågor:
+1. Finns det något lämpligt ställe att ladda upp modellerna och göra dem smidigt tillgängliga i colab eller är det google drive som gäller?(Kräver inloggning)
+2. 
