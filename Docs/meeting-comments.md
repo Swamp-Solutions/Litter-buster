@@ -26,5 +26,5 @@ Vi bör även titta extra på hur vi ska "haffa" nedskräpare? Det finns olika s
 ### Andreas L Frågor:
 1. Finns det något lämpligt ställe att ladda upp modellerna och göra dem smidigt tillgängliga i colab eller är det google drive som gäller?(Kräver inloggning)
 2. Svårt det där hur man ska tänka med projektplanering. Jag hade velat ha ett förstrukturerat sätt att lägga upp allting. \
-Det blev ju så mycket enklare med ETL-projektet med den fördefinierade strukturen \ 
+Det blev ju så mycket enklare med ETL-projektet med den fördefinierade strukturen \
 Finns det någon praxis eller är detta något jag ordnar själv?
