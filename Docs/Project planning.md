@@ -161,3 +161,11 @@ Ratio of the number of confirmed positives to the total positives predicted.
 #### Recall
 Recall is defined as True positives divided by the sum of true positives and false negatives. \
 In short, this means we have a low amount of false negatives if we're close to 1 in recall.
+
+
+
+### Demo-idéer
+Marcus - [19:20] Marcus Klingborg
+Tror du att du hade kunnat skapa en counter för skräp i en video? \
+Hade varit en sjukt cool showcase med en video på skräp och man ser hur den markerar upp och räknar upp antal per kategori och totalt
+
