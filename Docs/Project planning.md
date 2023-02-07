@@ -146,3 +146,18 @@ Hade varit extremt snyggt för att demonstrera produkten. Kanske mindre användb
 Enkelt. Går att göra snygga front-ends och visualisera bilder på ett tydligt sätt. \
 Kanske att ha detta som bas för administration av produkten? \
 Hade varit coolt att kunna presentera en video-stream där man slänger lite skräp live.
+
+
+### Explanations:
+#### Box_loss
+The box loss represents how well the algorithm can locate the centre of an object and how well the predicted bounding box covers an object
+
+#### cls_loss
+A loss that measures the correctness of the classification of each predicted bounding box: each box may contain an object class, or a "background". This loss is usually called cross entropy loss. \
+
+#### Precision
+Ratio of the number of confirmed positives to the total positives predicted.
+
+#### Recall
+Recall is defined as True positives divided by the sum of true positives and false negatives. \
+In short, this means we have a low amount of false negatives if we're close to 1 in recall.
