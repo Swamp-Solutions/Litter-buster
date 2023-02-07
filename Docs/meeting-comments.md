@@ -28,3 +28,4 @@ Vi bör även titta extra på hur vi ska "haffa" nedskräpare? Det finns olika s
 2. Svårt det där hur man ska tänka med projektplanering. Jag hade velat ha ett förstrukturerat sätt att lägga upp allting. \
 Det blev ju så mycket enklare med ETL-projektet med den fördefinierade strukturen \
 Finns det någon praxis eller är detta något jag ordnar själv?
+3. Jag vill vid senare tillfälle göra en merge med main men ta bort några filer. Det kanske går att göra via .gitignore?
