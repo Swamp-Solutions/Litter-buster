@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgreen;
+    background: url('../assets/images/349258.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr {
+    margin-left: 0px;
+    width: 50%;
+    left: 0xp;
+}
+
+#header_div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding-left: 3%;
+    text-align: start;
+    background-color: darkgreen;
+    background: rgba(0,100,0,0.5);
+    width: 97%;
+    color: White;
+}
+
+#video_div {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(0,100,0,0);
+}
+
+#about_div {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    padding: 10px;
+    background-color: darkgreen;
+    background: rgba(0,100,0,0.5);
+    background-size: cover;
+    color: White;
+    max-width: 30%;
+    border-style: solid pink;
+    border-width: 30px;
+    border-radius: 2%;
+}
+
+.navigation {
+    position: absolute;
+    height: 40%;
+    top: 30%;
+    right: 5%;
+    background-color: darkgreen;
+    width: 250px;
+}
