@@ -169,3 +169,15 @@ Marcus - [19:20] Marcus Klingborg
 Tror du att du hade kunnat skapa en counter för skräp i en video? \
 Hade varit en sjukt cool showcase med en video på skräp och man ser hur den markerar upp och räknar upp antal per kategori och totalt
 
+
+### Arbeten
+1. Flask-sida ladda upp bilder, showcase för presentationen.
+2. Ansiktsigenkänning efter predictions
+3. Hur associerar vi människor med skräp?
+- Avstånd
+- Tid
+- [Annat-projekt](https://towardsdatascience.com/an-orwellian-approach-to-the-litter-problem-1396ddb15701)
+4. Lära in slutlig modell.
+5. Counter för skräp i video
+6. Videohantering
+7. Övervakningskamera - kolla i logg vilka filmer som gåtts igenom och kör detection på de som inte har gåtts igenom
