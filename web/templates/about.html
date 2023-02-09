@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+<div id="body_main_div">
+    <div class="all">
+        <h1>About Us</h1>
+        <div id="about_div">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to promote sustainability and combat the increasing problem of garbage pollution. We believe that the use of technology, specifically machine learning and advanced algorithms, can help us achieve this goal.
+            </p>
+           <h2>Our Approach</h2>
+            <p>
+                We aim to detect and address the problem of trash pollution by using advanced algorithms to detect trash in images and videos. This information can then be used by local governments, activists, and communities to clean up their surroundings more efficiently.
+            </p>
+           <h2>Our Commitment</h2>
+            <p>
+                We are dedicated to finding innovative solutions to the problem of garbage pollution and strive to make a positive impact on the environment.
+            </p>
+        </div>
+        <div class="team">
+            <h2 class="team">Our Team</h2>
+            <div id="team_div">
+                <div class="team_member_container">
+                    <div id="Andreas" class="team_member">
+                        <img src="{{ url_for('static', filename='/assets/images/shrek.png') }}" alt="Headshot of Andreas">
+                        <p>
+                            <b>Andreas "Shrek" Löfkvist</b><br>
+                            Role: Co-Founder<br>
+                            Expertise: making the rest confused, <br> 
+                            bringing irrelevant facts, advanced coding<br>
+                            Passion: Talking, writing down questions and 
+                            answering them himself.
+                        </p>
+                    </div>
+                    <div id="Marcus" class="team_member">
+                        <img src="{{ url_for('static', filename='/assets/images/donkey.png') }}"  alt="Headshot of Marcus">
+                        <p>
+                            <b>Marcus "Åsnan" Klingborg</b><br>
+                            Role: Co-Founder<br>
+                            Expertise: Humming, labeling data, <br>
+                            talking in riddles<br>
+                            Passion: Good tilled earth.
+                        </p>
+                    </div>
+                    <div id="Helen" class="team_member">
+                        <img src="{{ url_for('static', filename='/assets/images/katten.png') }}"  alt="Headshot of Helen">
+                        <p>
+                            <b>Helen "Katten" Albandak Vähäkangas </b><br>
+                            Role: CO-Founder<br>
+                            Expertise: Singing, giving Marcus more work, jokes<br>
+                            Passion: Doing non-important tasks and <br>
+                            perfecting them to the last detail. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
