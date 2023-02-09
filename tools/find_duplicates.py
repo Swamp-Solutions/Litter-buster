@@ -4,7 +4,7 @@ import pandas as pd
 
 from collections import defaultdict
 
-PATH = 'C:\\Users\\mcvk\\Downloads\\dups\\images\\'
+PATH = 'C:\\Users\\mcvk\\Downloads\\dups2\\images\\'
 print(PATH)
 
 
