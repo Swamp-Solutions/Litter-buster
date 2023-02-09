@@ -6,6 +6,11 @@
   - Deciding on categories for data labeling.
   - Selecting appropriate images.
 - 2023-02-07: Labeling all instances of litter in data according to the decided categories.
+- 2023-02-09: Cleaning dataset
+  - Added tools.
+    - Removing duplicate images.
+    - Removing used images before adding more images to the dataset.
+  - Removing images with a too low resolution.
 
 ## Creating a flask application
 
