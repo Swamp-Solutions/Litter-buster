@@ -21,4 +21,14 @@ Also added more background-images. \
 Will look to do one full 150 epoch run with frozen layers.
 
 ##### Created scripts to evaluate pictures
-We have an issue where the pictures are in extremely different resolutions. Some pictures are lower than the learning resolution which causes problems.
+We have an issue where the pictures are in extremely different resolutions. Some pictures are lower than the learning resolution which may cause problems.
+
+### 2023-02-09
+##### Model Version 1 finished running! \
+Fixed problems: Much less false positives, almost down to none. I believe this was fixed by adding background images. \
+Current problems: We have some mislabeling. This may be due to a few factors: Too many of one class, unversatile labels, lack of background-data. \
+##### Video-handling-function just about finished.
+We have an issue where using the cv2 haar cascades is causing a loss of performance on predictions, making the videos laggy. \
+They also give inaccurate boxes. \
+This may be fixed by installing GPU-supporting software for openCV. \
+Still need to add email function and get an announcement of the litterer by euclidian distance.
