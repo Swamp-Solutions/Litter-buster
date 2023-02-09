@@ -9,10 +9,10 @@ def find_smallest_res(fpath='.'):
     filelist=[]
     for x in os.listdir(fpath):
         if x == 'chkres.py':continue
-        img = PIL.Image.open(x)
+        img = PIL.Image.open(fpath+'/'+x)
         wid, hgt = img.size
         
-        if wid < 320 or  hgt < 320:
+        if wid < 640 or  hgt < 640:
             print(wid, 'x', hgt)
             widlst.append(wid)
             hgtlst.append(hgt)
