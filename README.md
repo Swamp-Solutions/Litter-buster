@@ -83,7 +83,7 @@ Litterbuster is an application to identify and catalog instances of littering as
 
 ### **Predictions**
 
-- Predict person will litter
+- Predict if person will litter
 - Predict littering peak-littering-times
 - Predict clean-up need
 
@@ -97,15 +97,15 @@ Litterbuster is an application to identify and catalog instances of littering as
 
 - [ ] Person recognition and classification
   - [ ] Mark identified person
-
-- [ ] Litter identification
-  - [ ] Mark identified litter
+- [ ] Face recognition
+- [X] Litter identification
+  - [X] Mark identified litter
   - [ ] Application to save instances of litter
     - [ ] Save timestamp
     - [ ] Save location
   - [ ] Predict litter patterns in an area
-  - [ ] Check instances of litter in Movie/Video
-  - [ ] Visualize
+  - [X] Check instances of litter in Movie/Video
+  - [X] Visualize
 
 ## Notes
 
