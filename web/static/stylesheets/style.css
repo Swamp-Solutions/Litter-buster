@@ -17,8 +17,8 @@ body {
 
 hr {
     margin-left: 0px;
-    width: 50%;
-    left: 0xp;
+    width: 90%;
+    margin: auto;
 }
 
 #header_div {
@@ -42,36 +42,59 @@ hr {
     background: rgba(0,100,0,0);
 }
 
-#about_div {
+.home_div {
+    text-align: center;
     position: absolute;
     top: 45%;
-    left: 4%;
-    padding: 10px;
+    left: 8%;
+    color: White;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    background-size: cover;
-    color: White;
     max-width: 30%;
-    border-style: solid pink;
-    border-width: 30px;
     border-radius: 2%;
+    padding: 20px;
 }
 
+.home_div p {
+    text-align: left;
+}
+
+.about_us {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    color: White;
+}
+
+.about_div {
+    background-color: darkgreen;
+    background: rgba(0,100,0,0.5);
+    max-width: 30%;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.about_div p {
+    text-align: left;
+}
+
+#team_div h2 {
+    text-align: center;
+}
 
 #team_div {
     position: absolute;
-    top: 45%;
+    top: 25%;
     right: 5%;
     padding: 10px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    background-size: cover;
     color: White;
     max-width: 50%;
-    border-style: solid pink;
-    border-width: 30px;
     border-radius: 2%;
 }
+
 #signup_div {
     position: absolute;
     top: 18%;
@@ -117,9 +140,7 @@ hr {
 
 }
 
-#our_team{
-    top: 22%;
-}
+
 
 input{
     margin: 10px;
@@ -128,13 +149,15 @@ input{
 
 
 
-.container{
-    display:flex;
+.team_member_container {
+    display: flex;
 }
+
 .team_member {
+    align-content: center;
     display: inline-block;
     width: 30%;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
     color: white;
 }
@@ -143,8 +166,8 @@ input{
 .team_member img {
     width: 120px;
     height: 120px;
-    border-radius: 75px;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 
@@ -233,15 +256,10 @@ h1{
     padding: 10px;
 }
 
-.team{
+.team_member_container{
     color: white;
-    position: absolute;
-    top: 35%;
-    right: 45%;
     padding: 10px;
-    font-size: xx-large;
 }
-
 
 footer{
   text-align: center;
