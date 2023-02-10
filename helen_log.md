@@ -1,4 +1,4 @@
-#Helens log
+# Helens log
 
 ## face detection
 
@@ -30,4 +30,5 @@
   - added a sign up and log in pages
   - trying to wtweak the small stuff.
   - trying to solve the try it yourself page
-  - perfecting the about us page, the section of the headshots 
+  - perfecting the about us page, the section of the headshots
+  
