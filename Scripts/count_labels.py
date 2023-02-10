@@ -3,7 +3,7 @@ import pandas as pd
 from collections import defaultdict
 
 labelpath = os.path.abspath(
-    'C:\\Users\\mcvk\\Downloads\\dataset\\equilized_dataset\\labels\\')
+    'C:\\Users\\mcvk\\Downloads\\dataset\\full_labeled_dataset\\labels\\')
 counter = defaultdict(lambda: 0)
 
 for labeltxt in os.listdir(labelpath):
