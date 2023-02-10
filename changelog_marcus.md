@@ -11,6 +11,11 @@
     - Removing duplicate images.
     - Removing used images before adding more images to the dataset.
   - Removing images with a too low resolution.
+- 2023-02-09: Added additional images to the dataset.
+  - Added tools.
+    - Checking for duplicate images: None
+    - Creating a balanced dataset based on numer of labels: Done
+    - Creating a validation dataset.
 
 ## Creating a flask application
 
