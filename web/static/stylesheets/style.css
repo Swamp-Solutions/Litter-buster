@@ -61,32 +61,92 @@ hr {
 #team_div {
     position: absolute;
     top: 45%;
-    right: 4%;
+    right: 5%;
     padding: 10px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
     background-size: cover;
     color: White;
-    max-width: 60%;
+    max-width: 50%;
     border-style: solid pink;
     border-width: 30px;
     border-radius: 2%;
 }
+#signup_div {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    padding: 30px;
+    background-color: darkgreen;
+    background: rgba(0,100,0,0.5);
+    background-size: cover;
+    color: White;
+    max-width: 50%;
+    border-style: solid pink;
+    border-width: 50px;
+    border-radius: 5%;
+    font-size: 20px;
 
+}
+
+#login_div {
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    padding: 30px;
+    background-color: darkgreen;
+    background: rgba(0,100,0,0.5);
+    background-size: cover;
+    color: White;
+    max-width: 50%;
+    border-style: solid pink;
+    border-width: 50px;
+    border-radius: 5%;
+    font-size: 20px;
+
+}
+
+#submit{
+    background-color: rgb(20, 182, 20);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    align-self: center;
+
+}
+
+#our_team{
+    top: 22%;
+}
+
+input{
+    margin: 10px;
+    padding: 5px;
+}
+
+
+
+.container{
+    display:flex;
+}
 .team_member {
     display: inline-block;
-    width: 33.33%;
+    width: 30%;
     text-align: center;
     vertical-align: top;
     color: white;
 }
 
+
 .team_member img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 75px;
     margin-bottom: 20px;
 }
+
 
 .navigation {
     position: absolute;
@@ -136,7 +196,7 @@ hr {
 
 }
 
-li, a, button{
+li, a, button, #submit{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -152,7 +212,7 @@ button{
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+button:hover, #submit:hover {
     background-color: rgb(3, 144, 3);
 }
 

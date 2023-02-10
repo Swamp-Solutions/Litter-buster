@@ -21,6 +21,14 @@ def try_it_yourself():
 def contact_us():
     return render_template('contact_us.html')
 
+@app.route("/login", methods=['GET'])
+def login():
+    return render_template('login.html') #make html template
+
+@app.route("/sign-up", methods=['GET'])
+def sign_up():
+    return render_template('sign_up.html')#make html template
+
 if __name__ == "__main__":
     app.run(debug=False, port=5000)
 
