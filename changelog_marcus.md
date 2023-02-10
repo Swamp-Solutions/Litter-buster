@@ -19,7 +19,7 @@
 
 ## Creating a flask application
 
-- 2023-20-08: Application created.
+- 2023-02-08: Application created.
   - Not using jupyter for simplification purposes.
 - 2023-02-08: Basic layout and style added.
   - Routes are determiner through app.py.
@@ -30,3 +30,6 @@
       - Video is set to autoplay and muted.
       - About div added with text.
       - Adding menu.
+- 2023-02-10: Changes to layout.
+  - Minor fixes.
+  - Fixed files structure.
