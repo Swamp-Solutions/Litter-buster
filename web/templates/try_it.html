@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+<div id="body_main_div">
+    <h1>Try it Yourself</h1>
+    <hr>
+    <div id="try_it_yourself_div">
+        <h2>How it works</h2>
+        <p>
+            Our trash detection system uses machine learning algorithms to identify and locate trash in images and videos. To try it out for yourself, simply upload an image or video that contains trash, and our system will highlight the detected trash for you.
+        </p>
+        <h2>Get Started</h2>
+        <form action="{{ url_for('find_litter') }}" method="post" enctype="multipart/form-data">
+            <label for="input_file">Upload Image or Video:</label>
+            <input type="file" name="input_file" id="input_file" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
