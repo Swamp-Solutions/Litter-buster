@@ -95,38 +95,28 @@ hr {
     border-radius: 2%;
 }
 
-#signup_div {
-    position: absolute;
-    top: 18%;
-    left: 4%;
-    padding: 30px;
-    background-color: darkgreen;
-    background: rgba(0,100,0,0.5);
-    background-size: cover;
-    color: White;
-    max-width: 50%;
-    border-style: solid pink;
-    border-width: 50px;
-    border-radius: 5%;
-    font-size: 20px;
-
-}
-
-#login_div {
+#login_div, #signup_div {
     position: absolute;
     top: 22%;
     left: 8%;
     padding: 30px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    background-size: cover;
     color: White;
     max-width: 50%;
-    border-style: solid pink;
-    border-width: 50px;
     border-radius: 5%;
-    font-size: 20px;
+}
 
+#login_div, #signup_div label {
+    font-size: 16px;
+}
+
+.register {
+    text-align: right
+}
+
+.login_title, .sign_up_title {
+    text-align: center;
 }
 
 #submit{
@@ -136,8 +126,7 @@ hr {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    align-self: center;
-
+    float: right
 }
 
 
@@ -149,27 +138,32 @@ input{
 
 
 
-.team_member_container {
-    display: flex;
+.team_member_container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .team_member {
-    align-content: center;
-    display: inline-block;
+    float: left;
     width: 30%;
     text-align: left;
     vertical-align: top;
     color: white;
+    margin-right: 1%;
 }
 
 
 .team_member img {
+    align-self: center;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
-
+.team_member hr {
+    width: 100%;
+}
 
 
 .header {
