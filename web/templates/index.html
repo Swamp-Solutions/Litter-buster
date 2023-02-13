@@ -17,14 +17,14 @@
         <li><a href="/sign-up">Sign up</a></li>
       </ul>
     </nav>
-    <a class="cta" href="/contact-us"><button>Contact</button></a>
+    <a class="cta" href="/contact-us"><button>Contact us</button></a>
   </header>
+  
+  {% block main %}
+  {% endblock %}
   <footer>
     <p>Copyright © Swamp Solutions 2023</p>
   </footer>
-  {% block main %}
-  {% endblock %}
-
   <!-- <script>
     document.querySelector('select[name="pages"]').addEventListener('change', function() {
       window.location = this.value;
