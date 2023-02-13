@@ -171,44 +171,37 @@ input{
 }
 
 
-.navigation {
-    position: absolute;
-    height: 40%;
-    top: 30%;
-    right: 5%;
-    background-color: darkgreen;
-    width: 250px;
-}
 
-.navbar {
-    display: flex;
+.header {
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    width: 97%;
+    width: 100%;
 }
   
 .logo {
-    position:fixed;
+    position: absolute;
+    left: 15px;
+    margin: auto;
+    top: 1%;
     height: 60px;
     left: 10px;
     cursor:pointer;
 }
   
-.nav__links {
+.nav_links {
     list-style: none;
 }
-.nav__links li {
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }  
 
-.nav__links li a {
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
-.nav__links li a:hover {
+.nav_links li a:hover {
     color: rgb(10, 203, 10)
 }
 
