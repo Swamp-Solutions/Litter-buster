@@ -19,12 +19,6 @@ classes = {
   4: "Plastic",
   5: "Tobacco"
 }
-def add_counter(frame, classdict):
-    size = (frame2.shape[0],frame2.shape[1])
-    for key in classdict.keys():
-        print((5*int(key),80+int(key), 50*int(key)), (int(size[0]-(720/(6-int(key)))),int(size[1]-size[1]/6)), f'{classes[key]}: {classdict[key]}')
-        cv2.putText(frame2, "Hello", (70,180), fontFace=cv2.FONT_HERSHEY_TRIPLEX, fontScale=2, color=(250,250,0))
-        cv2.putText(frame2, f'{classes[key]}: {classdict[key]}', (int(size[0]-(720/(6-int(key)))),int(size[1]-size[1]/6)), fontFace=cv2.FONT_HERSHEY_TRIPLEX, fontScale = 2, color=(255,0,0))
 
 def get_midpoint(xyxy):
 
@@ -47,8 +41,8 @@ def transform_frame(frame, model=model, video=False):
             key=int(key)
             itext= f'{classes[key]}: {classdict[key]}'
             pos = (int(size[0]-(720/(6-int(key)))),int(size[1]-size[1]/6))
-            cv2.putText(frame2, itext, (150,280+x), cv2.FONT_HERSHEY_TRIPLEX, 6, (250,250,0), 4)
-            x+=160
+            cv2.putText(frame2, itext, (40,80+x), cv2.FONT_HERSHEY_TRIPLEX, 3, (250,250,0), 4)
+            x+=60
         #frame2 = draw_boxes(frame2,pboxes, (0,255,0))
     elif video:
         classdict={}
