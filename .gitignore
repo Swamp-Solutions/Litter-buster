@@ -8,6 +8,11 @@ __pycache__/
 *.jpg
 # Distribution / packaging
 .Python
+Scripts
+Notebooks
+Logs
+bilder
+facedetect
 build/
 develop-eggs/
 dist/
