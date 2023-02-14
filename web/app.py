@@ -1,4 +1,8 @@
 from flask import Flask, render_template
+from flask import request
+from PIL import Image
+from predict.image_transformation import transform_frame
+import numpy as np
 
 app = Flask(__name__, template_folder='templates')
 
@@ -13,9 +17,26 @@ def about():
     return render_template('about.html')
 
 
-@app.route("/try-it-yourself", methods=['GET'])
+@app.route("/uploader", methods=["POST", "GET"])
+def uploader():
+    if request.method == 'POST':
+        f = request.files['file']
+        img=Image.open(f)
+        img = np.array(img)
+        img = transform_frame(img)
+        img = Image.fromarray(img.astype('uint8'))
+        savename = "./static/uploads/"+f.filename.split('.')[0]+'.jpg'
+        img.save(savename)
+        return render_template("try_it.html", image='./uploads/'+f.filename.split('.')[0]+'.jpg')
+    if request.method == "GET":
+        return render_template('try_it.html')
+
+@app.route("/try-it-yourself", methods=['GET','POST'])
 def try_it_yourself():
-    return render_template('try_it.html')
+    
+    if request.method == 'GET':
+
+        return render_template('try_it.html')
 
 
 @app.route("/contact-us", methods=['GET'])
