@@ -21,20 +21,21 @@ def about():
 def uploader():
     if request.method == 'POST':
         f = request.files['file']
-        img=Image.open(f)
+        img = Image.open(f)
         img = np.array(img)
         img = transform_frame(img)
         img = Image.fromarray(img.astype('uint8'))
         savename = "./static/uploads/"+f.filename.split('.')[0]+'.jpg'
-        img=img.resize((640,640))
+        img = img.resize((480, 480))
         img.save(savename)
         return render_template("try_it.html", image='./uploads/'+f.filename.split('.')[0]+'.jpg')
     if request.method == "GET":
         return render_template('try_it.html')
 
+
 @app.route("/try-it-yourself", methods=['GET'])
 def try_it_yourself():
-    
+
     if request.method == 'GET':
 
         return render_template('try_it.html')
