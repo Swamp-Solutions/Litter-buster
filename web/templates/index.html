@@ -5,13 +5,8 @@
     <link type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}"  rel="stylesheet">
 </head>
 <body>
-<<<<<<< HEAD
-  <header>
-    <img src="{{ url_for('static', filename='/assets/images/logga.png') }}" class="logo" " alt="logo" title="logo">
-=======
   <header class="header">
     <a href="/"><img src="{{ url_for('static', filename='/assets/images/logga.png') }}" class="logo" alt="logo" title="logo"></a>
->>>>>>> dev-marcus
     <nav>
       <ul class="nav__links">
         <li><a href="/" class="active">Home</a></li>
@@ -26,22 +21,10 @@
   
   {% block main %}
   {% endblock %}
+
   <footer>
     <p>Copyright © Swamp Solutions 2023</p>
   </footer>
-  <!-- <script>
-    document.querySelector('select[name="pages"]').addEventListener('change', function() {
-      window.location = this.value;
-    }); -->
-  <!-- </script> -->
-
-<script>
-   const logo = document.querySelector('.logo');
-   logo.onerror = function() {
-    console.error('The logo image failed to load.');
-    };
-</script>
-  
 
 </body>
 </html>
