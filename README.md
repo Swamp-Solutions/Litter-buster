@@ -95,12 +95,12 @@ Litterbuster is an application to identify and catalog instances of littering as
 
 ### **Project breakdown**
 
-- [ ] Person recognition and classification
-  - [ ] Mark identified person
-- [ ] Face recognition
+- [X] Person recognition and classification
+  - [X] Mark identified person
+- [X] Face recognition
 - [X] Litter identification
   - [X] Mark identified litter
-  - [ ] Application to save instances of litter
+  - [X] Application to save instances of litter
     - [ ] Save timestamp
     - [ ] Save location
   - [ ] Predict litter patterns in an area
