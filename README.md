@@ -16,8 +16,6 @@ Litterbuster is an application to identify and catalog instances of littering as
   - [Notes](#notes)
   - [Known issues](#known-issues)
   - [Reflections](#reflections)
-    - [Andreas Comments](#andreas-comments)
-      - [Andreas Länkar](#andreas-länkar)
 
 ## Project plan
 
@@ -114,19 +112,3 @@ Litterbuster is an application to identify and catalog instances of littering as
 - GDPR has to be taken into consideration if using facial recognition functions.
 
 ## Reflections
-
-### Andreas Comments
-
-Link in 9. in Objectives
-Decide on Dataset for litter
-Find method for loading model in scikit learn
-
-#### Andreas Länkar
-
-[What is Online Machine Learning?](https://medium.com/value-stream-design/online-machine-learning-515556ff72c5)
-
-[Litter Detection with Deep Learning: A Comparative Study](https://www.mdpi.com/1424-8220/22/2/548)
-
-[PlastOPol: A Dataset for Litter Detection](https://zenodo.org/record/5829156#.Y9vM6XbMJmM)
-
-[Add new data to a pretrained model](https://towardsdatascience.com/how-to-add-new-data-to-a-pretrained-model-in-scikit-learn-ce16911afe33)
