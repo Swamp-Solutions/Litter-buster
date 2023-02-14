@@ -26,12 +26,13 @@ def uploader():
         img = transform_frame(img)
         img = Image.fromarray(img.astype('uint8'))
         savename = "./static/uploads/"+f.filename.split('.')[0]+'.jpg'
+        img=img.resize((640,640))
         img.save(savename)
         return render_template("try_it.html", image='./uploads/'+f.filename.split('.')[0]+'.jpg')
     if request.method == "GET":
         return render_template('try_it.html')
 
-@app.route("/try-it-yourself", methods=['GET','POST'])
+@app.route("/try-it-yourself", methods=['GET'])
 def try_it_yourself():
     
     if request.method == 'GET':
@@ -54,5 +55,5 @@ def sign_up():
     return render_template('sign_up.html')
 
 
-# if __name__ == "__main__":
-#     app.run(debug=False, port=5000)
+if __name__ == "__main__":
+    app.run(debug=False, port=5000)
