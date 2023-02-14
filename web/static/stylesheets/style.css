@@ -21,17 +21,7 @@ hr {
     margin: auto;
 }
 
-#header_div {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding-left: 3%;
-    text-align: start;
-    background-color: darkgreen;
-    background: rgba(0,100,0,0.5);
-    width: 97%;
-    color: White;
-}
+
 
 #video_div {
     position: absolute;
@@ -95,38 +85,28 @@ hr {
     border-radius: 2%;
 }
 
-#signup_div {
-    position: absolute;
-    top: 18%;
-    left: 4%;
-    padding: 30px;
-    background-color: darkgreen;
-    background: rgba(0,100,0,0.5);
-    background-size: cover;
-    color: White;
-    max-width: 50%;
-    border-style: solid pink;
-    border-width: 50px;
-    border-radius: 5%;
-    font-size: 20px;
-
-}
-
-#login_div {
+#login_div, #signup_div {
     position: absolute;
     top: 22%;
     left: 8%;
     padding: 30px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    background-size: cover;
     color: White;
     max-width: 50%;
-    border-style: solid pink;
-    border-width: 50px;
     border-radius: 5%;
-    font-size: 20px;
+}
 
+#login_div, #signup_div label {
+    font-size: 16px;
+}
+
+.register {
+    text-align: right
+}
+
+.login_title, .sign_up_title {
+    text-align: center;
 }
 
 #submit{
@@ -136,8 +116,7 @@ hr {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    align-self: center;
-
+    float: right
 }
 
 
@@ -149,66 +128,66 @@ input{
 
 
 
-.team_member_container {
-    display: flex;
+.team_member_container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .team_member {
-    align-content: center;
-    display: inline-block;
+    float: left;
     width: 30%;
     text-align: left;
     vertical-align: top;
     color: white;
+    margin-right: 1%;
 }
 
 
 .team_member img {
+    align-self: center;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
-
-
-.navigation {
-    position: absolute;
-    height: 40%;
-    top: 30%;
-    right: 5%;
-    background-color: darkgreen;
-    width: 250px;
+.team_member hr {
+    width: 100%;
 }
 
-.navbar {
-    display: flex;
+
+.header {
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     background-color: darkgreen;
     background: rgba(0,100,0,0.5);
-    width: 97%;
+    background-image: url('../assets/images/header-background.png');
+    background-repeat: repeat-y;
+    width: 100%;
 }
   
 .logo {
-    position:fixed;
+    position: absolute;
+    left: 15px;
+    margin: auto;
+    top: 1%;
     height: 60px;
     left: 10px;
     cursor:pointer;
 }
   
-.nav__links {
+.nav_links {
     list-style: none;
 }
-.nav__links li {
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }  
 
-.nav__links li a {
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
-.nav__links li a:hover {
+.nav_links li a:hover {
     color: rgb(10, 203, 10)
 }
 
