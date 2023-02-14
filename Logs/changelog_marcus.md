@@ -36,6 +36,10 @@
 - 2023-02-13: Fixed layout problems.
   - Changed logotype.
   - Logotype links to home.
+- 2023-02-14: Merges and cleanup.
+  - Changes to design.
+  - Reverted some mistakes.
+  - Designing Try-it function.
 
 ## Creating pitch-day presentation
 
