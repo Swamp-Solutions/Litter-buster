@@ -33,3 +33,20 @@
 - 2023-02-10: Changes to layout.
   - Minor fixes.
   - Fixed files structure.
+- 2023-02-13: Fixed layout problems.
+  - Changed logotype.
+  - Logotype links to home.
+
+## Creating pitch-day presentation
+
+- 2023-02-13: Creating presentation.
+  - Dividing contents between members.
+  - Creating slides and notes.
+
+## Github Management
+
+- 2023-02-02: Creating GitHub Oraganization and Repo.
+- 2023-02-10: Mergin branches and cleaning up repository.
+- 2023-02-14: Mergin branches and cleaning up repository.
+
+## Jira Management
