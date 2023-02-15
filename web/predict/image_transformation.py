@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import cv2
-# from person_detection import detect_people, draw_boxes
+from predict.person_detection import detect_people, draw_boxes
 import os
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -34,7 +34,7 @@ def transform_frame(frame, model=model, video=False):
     frame2 = np.squeeze(res.render())
     if not video:
         classdict = {}
-        #pboxes = detect_people(frame)
+        # pboxes = detect_people(frame)
         resarray = res.xyxy[0].cpu().numpy()
         size = frame2.shape[:2]
         for arr in resarray:
@@ -47,7 +47,7 @@ def transform_frame(frame, model=model, video=False):
             cv2.putText(frame2, itext, (40, 80+x),
                         cv2.FONT_HERSHEY_TRIPLEX, 3, (250, 250, 0), 4)
             x += 80
-        #frame2 = draw_boxes(frame2,pboxes, (0,255,0))
+        # frame2 = draw_boxes(frame2,pboxes, (0,255,0))
     elif video:
         classdict = {}
         resarray = res.xyxy[0].cpu().numpy()

@@ -22,11 +22,14 @@
                 </div>
                 <form action = "http://localhost:5000/uploader" method = "POST" 
                 enctype = "multipart/form-data">
+                <div>
                     <input id="file" type="file" name="file" />
                     <input id="submit_img" type="submit" value="Submit"/>
+                </div>
+                <div><input id="email" type="email" name="email" placeholder="E-mail(Optional)"/></div>
                 </form>
-                {%if image%}
-                <img src="{{url_for('static', filename=image)}}">
+                {%if image%}<div>
+                <img src="{{url_for('static', filename=image)}}"></div>
                 {%endif%}
             </div>
             
