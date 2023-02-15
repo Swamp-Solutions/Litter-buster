@@ -4,6 +4,7 @@ from PIL import Image
 from predict.image_transformation import transform_frame
 from predict.email_client import send_mail
 import numpy as np
+import os
 
 app = Flask(__name__, template_folder='templates')
 
@@ -26,16 +27,19 @@ def uploader():
         img = np.array(img)
         img = transform_frame(img)
         img = Image.fromarray(img.astype('uint8'))
-        savename = "./static/uploads/"+f.filename.split('.')[0]+'.jpg'
+        savename = os.path.dirname(__file__) + "/static/uploads/" + \
+            f.filename.split('.')[0]+'.jpg'
         img = img.resize((480, 480))
         img.save(savename)
         email = request.form.get("email")
         if email:
-            send_mail([email], './static/uploads/'+f.filename.split('.')[0]+'.jpg')
+            send_mail([email], os.path.dirname(__file__) + '/static/uploads/' +
+                      f.filename.split('.')[0]+'.jpg')
 
         return render_template("try_it.html", image='./uploads/'+f.filename.split('.')[0]+'.jpg')
     if request.method == "GET":
         return render_template('try_it.html')
+
 
 @app.route("/try-it-yourself", methods=['GET'])
 def try_it_yourself():
