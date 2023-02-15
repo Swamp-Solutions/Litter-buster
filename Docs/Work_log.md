@@ -32,3 +32,8 @@ We have an issue where using the cv2 haar cascades is causing a loss of performa
 They also give inaccurate boxes. \
 This may be fixed by installing GPU-supporting software for openCV. \
 Still need to add email function and get an announcement of the litterer by euclidian distance.
+
+### 2023-02-10
+##### Put a stop to Model-optimization \
+We got a pretty good dataset and finished building a model with it.
+##### 
