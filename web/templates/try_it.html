@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+<div id="body_main_div">
+    <div class="try_it">
+        <h2>Try it Yourself</h2>        
+        <hr><br>
+        <div class="do_it">
+            <div class="try_it_yourself">
+                <div class="how_it_works_title">
+                    <h2>How it works</h2><hr><br>
+                </div>
+                <p>
+                    Our trash detection system uses machine learning algorithms to identify and locate trash in images and videos. To try it out for yourself, simply upload an image or video that contains trash, and our system will highlight the detected trash for you.
+                </p>
+                <br>
+            </div>
+            <div class="get_started">
+                <div class="get_started_title">
+                    <h2>Get Started</h2><hr><br>
+                </div>
+                <form action = "http://localhost:5000/uploader" method = "POST" 
+                enctype = "multipart/form-data">
+                <div>
+                    <input id="file" type="file" name="file" />
+                    <input id="submit_img" type="submit" value="Submit"/>
+                </div>
+                <div><input id="email" type="email" name="email" placeholder="E-mail(Optional)"/></div>
+                </form>
+                {%if image%}<div>
+                <img src="{{url_for('static', filename=image)}}"></div>
+                {%endif%}
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
