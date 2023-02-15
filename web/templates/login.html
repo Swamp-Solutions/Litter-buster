@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+<form method="POST">
+    <div id="login_div">
+        <div class="login_title">
+            <h2>Login</h2>
+            <hr>
+            <br>
+        </div>
+        <form action="submit_form.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter Username"required>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <br>
+            <div class="register">
+                <p>Not yet a member?</p>
+                <a href="/sign-up">Sign up here</a><br>
+            </div>
+            <br>
+            <input id="submit" type="submit" value="Login">
+          </form>
+          
+    </div>
+</form>
+
+{% endblock %}

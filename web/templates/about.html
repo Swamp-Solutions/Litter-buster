@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+<div id="body_main_div">
+    <div class="about_us">
+        <div class="about_div">
+            <h2>Our Mission</h2><hr><br>
+                <p>
+                    Our mission is to promote sustainability and combat the increasing problem of garbage pollution. We believe that the use of technology, specifically machine learning and advanced algorithms, can help us achieve this goal.
+                </p>
+            <h2>Our Approach</h2><hr><br>
+                <p>
+                    We aim to detect and address the problem of trash pollution by using advanced algorithms to detect trash in images and videos. This information can then be used by local governments, activists, and communities to clean up their surroundings more efficiently.
+                </p>
+                <br>
+            <h2>Our Commitment</h2><hr><br>
+                <p>
+                    We are dedicated to finding innovative solutions to the problem of garbage pollution and strive to make a positive impact on the environment.
+                </p>
+                <br>
+        </div>
+    </div>
+    <div id ="team_div">
+        <h2 id ="our_team" class="team">Founders</h2><hr><br>
+        <div class="team_member_container">
+            <div id="Andreas" class="team_member">
+                <img src="{{ url_for('static', filename='/assets/images/shrek.png') }}" alt="Headshot of Andreas">
+                <br><br>
+                <b>Andreas Löfkvist</b>
+                <hr><br>
+                <h4>Expertise:</h4>
+                <ul>
+                    <li>Create confusion</li>
+                    <li>Irrelevant facts</li>
+                    <li>Advanced coding</li>
+                </ul>
+                <br>
+
+                <h4>Passion:</h4>
+                <ul>
+                    <li>Talking</li>
+                    <li>Writing down questions</li>
+                    <li>Answering his own questions</li>
+                </ul>
+            </div>
+            <div id="Marcus" class="team_member">
+                <img src="{{ url_for('static', filename='/assets/images/donkey.png') }}"  alt="Headshot of Marcus">
+                <br><br>
+                <b>Marcus Klingborg</b>
+                <hr><br>
+                <h4>Expertise:</h4>
+                <ul>
+                    <li>Humming</li>
+                    <li>Labeling data</li>
+                    <li>Talking in riddles</li>
+                </ul>
+                <br>
+
+                <h4>Passion:</h4>
+                <ul>
+                    <li>Good tilled earth</li>
+                    <li>Reasearch</li>
+                    <li>Adventures</li>
+                </ul>
+            </div>
+            <div id="Helen" class="team_member">
+                <img src="{{ url_for('static', filename='/assets/images/katten.png') }}"  alt="Headshot of Helen">
+                <br>
+                <b>Helen Albandak Vähäkangas</b>
+                <hr><br>
+                <h4>Expertise:</h4>
+                <ul>
+                    <li>Singing</li>
+                    <li>Creating more work</li>
+                    <li>Long names</li>
+                </ul>
+                <br>
+
+                <h4>Passion:</h4>
+                <ul>
+                    <li>Jokes</li>
+                    <li>Doing less important tasks</li>
+                    <li>Perfecting everything</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}
