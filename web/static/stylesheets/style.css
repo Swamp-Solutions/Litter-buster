@@ -59,6 +59,7 @@ hr {
     top: 22%;
     left: 8%;
     width: 84%;
+    max-height: 70%;
     padding: 15px;
     color: White;
     background: rgba(0,100,0,0.5);
@@ -82,10 +83,12 @@ hr {
     text-align: left;
 }
 
-.get_started {
-    float: right;
+.image {
+    display: flex;
+    float: left;
     width: 70%;
-    text-align: center;
+    margin: auto;
+    justify-content: center;
 }
 
 .about_div {
@@ -157,6 +160,11 @@ hr {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: rgb(252, 253, 252);
+    
+}
+
+.get_started input::placeholder {
+    color: rgb(252, 253, 252, 1);
 }
 
 #contact_info input {
@@ -175,6 +183,16 @@ hr {
 input {
     margin: 10px;
     padding: 5px;
+}
+
+input#email {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.image img {
+    max-height: 85%;
 }
 
 .team_member_container:after {
@@ -300,6 +318,7 @@ footer {
 #contact_div {
     min-width: 50%;
     max-width: 60%;
+    height: 70%;
     border-radius: 5%;
     padding: 15px;
 }
@@ -328,7 +347,7 @@ footer {
 #message_div {
     float: right;
     color: White;
-    width: 70%;
+    width: 68%;
 }
 
 #message {
@@ -336,6 +355,7 @@ footer {
     color: White;
     border-color: rgb(1, 85, 1);
     width: 100%;
+    height: 70%;
     padding: 10px;
     font-size: 16px;
 }
