@@ -35,7 +35,7 @@ def transform_frame(frame, model=model, video=False):
     frame2 = np.squeeze(res.render())
     if not video:
         classdict = {}
-        pboxes = detect_people(frame)
+        # pboxes = detect_people(frame)
         resarray = res.xyxy[0].cpu().numpy()
         size = frame2.shape[:2]
         for arr in resarray:
@@ -48,7 +48,7 @@ def transform_frame(frame, model=model, video=False):
             cv2.putText(frame2, itext, (40, 50+x),
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (240, 228, 66), 4)
             x += 40
-        frame2 = draw_boxes(frame2, pboxes, (0, 255, 0))
+        # frame2 = draw_boxes(frame2, pboxes, (0, 255, 0))
     elif video:
         classdict = {}
         resarray = res.xyxy[0].cpu().numpy()

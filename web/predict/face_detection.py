@@ -1,9 +1,10 @@
 import cv2 as cv
 import numpy as np
+import os
 from person_detection import detect_people, draw_boxes
 
-models = "../models"
-faceCascade = cv.CascadeClassifier(models+'/faces.xml')
+models = os.path.join(os.path.dirname(os.path.dirname(__file__)),'models')
+faceCascade = cv.CascadeClassifier(os.path.join(models,'faces.xml'))
 
 
 def detect_face(frame):
