@@ -1,9 +1,10 @@
 import cv2 as cv
 import numpy as np
-from person_detection import 
+from person_detection import detect_people, draw_boxes
 
 models = "../models"
 faceCascade = cv.CascadeClassifier(models+'/faces.xml')
+
 
 def detect_face(frame):
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
@@ -14,6 +15,3 @@ def detect_face(frame):
         minSize=(30, 30),
     )
     return faces
-
-def detect_culprit(frame):
-    

@@ -201,6 +201,12 @@ input#email {
     clear: both;
 }
 
+.team_member_container {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
 .team_member {
     float: left;
     width: 30%;
