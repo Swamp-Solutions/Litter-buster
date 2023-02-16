@@ -87,6 +87,7 @@ hr {
     display: flex;
     float: left;
     width: 70%;
+    height: 400px;
     margin: auto;
     justify-content: center;
 }
@@ -189,10 +190,6 @@ input#email {
     margin: 10px;
     padding: 10px;
     
-}
-
-.image img {
-    max-height: 85%;
 }
 
 .team_member_container:after {

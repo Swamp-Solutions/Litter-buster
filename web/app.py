@@ -24,12 +24,12 @@ def uploader():
     if request.method == 'POST':
         f = request.files['file']
         img = Image.open(f)
+        img = img.resize((640, 640))
         img = np.array(img)
         img = transform_frame(img)
         img = Image.fromarray(img.astype('uint8'))
         savename = os.path.dirname(__file__) + "/static/uploads/" + \
             f.filename.split('.')[0]+'.jpg'
-        img = img.resize((480, 480))
         img.save(savename)
         email = request.form.get("email")
         if email:
