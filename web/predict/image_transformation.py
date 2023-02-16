@@ -10,6 +10,7 @@ MODELPATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models')
 VIDEOPATH = os.path.join(os.path.dirname(
     os.path.dirname(__file__)), 'Data/video')
 
+torch.hub._validate_not_a_forked_repo = lambda a, b, c: True
 model = torch.hub.load('ultralytics/yolov5', 'custom',
                        path=MODELPATH + '/2023-02-09-last.pt', force_reload=True)
 
@@ -59,7 +60,7 @@ def transform_frame(frame, model=model, video=False):
             key = int(key)
             itext = f'{classes[key]}: {classdict[key]}'
             cv2.putText(frame2, itext, (40, 50+x),
-                        cv2.FONT_HERSHEY_TRIPLEX, 1, (180, 150, 40), 4)
+                        cv2.FONT_HERSHEY_TRIPLEX, 1, (180, 150, 40), 4, cv2.LINE_AA)
             x += 40
     return frame2
 
@@ -74,7 +75,7 @@ def convert_video(video="/fillname.mp4"):
     result = cv2.VideoWriter(os.path.join(VIDEOPATH, 'filename_test.mp4'),
                              cv2.VideoWriter_fourcc(*'MJPG'),
                              10, size)
-    while(True):
+    while (True):
         ret, frame = video.read()
         if ret:
 
