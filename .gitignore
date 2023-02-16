@@ -9,7 +9,6 @@ __pycache__/
 .Python
 Scripts
 bilder
-facedetect
 build/
 develop-eggs/
 dist/
