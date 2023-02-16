@@ -1,5 +1,7 @@
 import cv2
+import os
 import numpy as np
+
 
 def detect_faces(frame, faceCascade):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -11,17 +13,20 @@ def detect_faces(frame, faceCascade):
     )
     return faces
 
+
 def detect_people(frame, hog):
-    boxes, weights = hog.detectMultiScale(frame, winStride=(8,8))
+    boxes, weights = hog.detectMultiScale(frame, winStride=(8, 8))
     boxes = np.array([[x, y, x + w, y + h] for (x, y, w, h) in boxes])
     return boxes
+
 
 def draw_boxes(frame, boxes, color=(0, 255, 0)):
     for (xA, yA, xB, yB) in boxes:
         cv2.rectangle(frame, (xA, yA), (xB, yB), color, 2)
     return frame
 
-cascPath = "haar_face.xml"
+
+cascPath = os.path.dirname(__file__) + "/haar_face.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
@@ -35,7 +40,7 @@ out = cv2.VideoWriter(
     'output.avi',
     cv2.VideoWriter_fourcc(*'MJPG'),
     15.,
-    (640,480))
+    (640, 480))
 
 while True:
     ret, frame = video_capture.read()
